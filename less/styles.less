@@ -80,15 +80,15 @@ body {
 		}
 
 		&.about {
-			background: #C02942 url("../img/stripes.png") repeat;
+			background: #C12843 url("../img/stripes.png") repeat;
 		}
 
 		&.work {
-			background: #D95B43 url("../img/stripes.png") repeat;
+			background: #F08D00 url("../img/stripes.png") repeat;
 		}
 
 		&.skills {
-			background: #542437 url("../img/stripes.png") repeat;
+			background: #8CA0A8 url("../img/stripes.png") repeat;
 		}
 
 		&.contact {
@@ -127,6 +127,12 @@ body {
 		.image {
 			position: relative;
 
+			a {
+				img {
+					border-bottom: 1px solid fade(@black, 10%);
+				}
+			}
+
 			&:hover {
 				.image-overlay {
 					opacity: 1;
@@ -150,17 +156,6 @@ body {
                 -o-transition: opacity .25s ease-in-out;
                 -moz-transition: opacity .25s ease-in-out;
                 -webkit-transition: opacity .25s ease-in-out;
-			}
-		}
-
-		a {
-
-			&:hover {
-				background: fade(@black, 20%);
-			}
-
-			img {
-				border-bottom: 1px solid fade(@black, 10%);
 			}
 		}
 
@@ -209,7 +204,7 @@ body {
 		background: fade(@black, 30%);
 
 		.bar {
-			background: #D4D4D4;
+			background: #CBCFBE;
 			text-align: left;
 			padding-left: 5px;
 			color: @black;
