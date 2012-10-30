@@ -22,5 +22,8 @@ $(document).ready(function(){
     $(".fancybox").fancybox();
     $(window).resize(function() {
         resizePages();
+        $('[data-spy="scroll"]').each(function () {
+            $(this).scrollspy('refresh');
+        });
     });
 });
