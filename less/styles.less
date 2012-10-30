@@ -12,20 +12,32 @@
 }
 
 @font-face {
-    font-family: 'PTSansRegular';
-    src: url('../fonts/ptsansregular-webfont.eot');
-    src: url('../fonts/ptsansregular-webfont.eot?iefix') format('eot'),
-         url('../fonts/ptsansregular-webfont.woff') format('woff'),
-         url('../fonts/ptsansregular-webfont.ttf') format('truetype'),
-         url('../fonts/ptsansregular-webfont.svg#webfontMPoPVFd4') format('svg');
+    font-family: 'PTSerifRegular';
+    src: url('../fonts/PTF55F-webfont.eot');
+    src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTF55F-webfont.woff') format('woff'),
+         url('../fonts/PTF55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTF55F-webfont.svg#PTSerifRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
 	color: fade(@white, 90%);
 	text-shadow: 1px 1px 0 fade(@black, 50%);
-	font-family: "PTSansRegular";
+	font-family: "PTSerifRegular";
 
 	.navbar {
 		.navbar-inner {
@@ -38,6 +50,10 @@ body {
 				text-transform: uppercase;
 				font-weight: bold;
 				font-size: 0.8em;
+
+				a {
+					font-weight: normal;
+				}
 
 				&.active {
 					background: transparent;
@@ -102,37 +118,86 @@ body {
 	}
 
 	.work-item {
-		background: fade(@black, 60%);
+		background: @white;
+		.box-shadow(1px 1px 0 fade(@black, 30%));
+		text-shadow: none;
 		margin-bottom: 30px;
 		margin-left: 10px;
 
-		img {
-			border: 10px solid fade(@black, 40%);
+		.image {
+			position: relative;
+
+			&:hover {
+				.image-overlay {
+					opacity: 1;
+				}
+			}
+
+			.image-overlay {
+				position: absolute;
+				bottom: 0;
+				background: fade(@black, 70%);
+				padding: 10px 0;
+				width: 100%;
+				text-align: center;
+				opacity: 0;
+				text-transform: uppercase;
+				font-family: "BebasNeueRegular";
+				letter-spacing: 3px;
+				text-shadow: 0 1px 0 @black;
+				font-weight: normal;
+				transition: opacity .25s ease-in-out;
+                -o-transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+			}
+		}
+
+		a {
+
+			&:hover {
+				background: fade(@black, 20%);
+			}
+
+			img {
+				border-bottom: 1px solid fade(@black, 10%);
+			}
 		}
 
 		.caption {
 			padding: 0 10px 10px 10px;
-			color: fade(@white, 60%);
+			color: fade(@black, 80%);
+			text-align: justify;
 
 			h3 {
-				color: @white;
-				border-bottom: 1px solid @white;
+				color: @black;
+				text-transform: uppercase;
+				font-family: "BebasNeueRegular";
+				font-weight: normal;
+				font-size: 2.3em;
+
+				small {
+					.pull-right;
+					margin-top: 18px;
+				}
 			}
 
 			p {
 				min-height: 100px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid fade(@black, 30%);
 			}
 
 			small {
 				text-transform: uppercase;
 
+
 				a {
 					.pull-right;
-					color: @white;
+					color: #D95B43;
 
 					&:hover {
-						color: darken(@white, 40%);
-						text-decoration: none;
+						color: darken(#D95B43, 20%);
 					}
 				}
 			}
@@ -144,9 +209,11 @@ body {
 		background: fade(@black, 30%);
 
 		.bar {
-			background: #776559;
+			background: #D4D4D4;
 			text-align: left;
 			padding-left: 5px;
+			color: @black;
+			text-shadow: none;
 		}
 	}
 }

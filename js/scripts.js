@@ -6,17 +6,21 @@ $(function() {
     });
 });
 
-$(document).ready(function(){
+function resizePages() {
     var windowHeight = $(window).height();
     $(".page").css("min-height", windowHeight-5);
-    $(".work img").each(function() {
-        var imgWidth = $(this).width();
-        $(this).width(imgWidth-20);
-    });
     $(".page > div").each(function() {
-        var contentHeight = $(this).height()+120;
-        if(contentHeight < windowHeight) {
+        var contentHeight = $(this).height();
+        if((contentHeight+120) < windowHeight) {
             $(this).css('margin-top', (windowHeight/2-contentHeight/2)-100);
         }
+    });
+}
+
+$(document).ready(function(){
+    resizePages();
+    $(".fancybox").fancybox();
+    $(window).resize(function() {
+        resizePages();
     });
 });
