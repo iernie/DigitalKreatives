@@ -1,5 +1,5 @@
 $(function() {
-    $('.nav li a[href^="#"]').click(function(e) {
+    $('.nav li a[href^="#"], .arrow-down a[href^="#"]').click(function(e) {
         e.preventDefault();
         $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 200);
         return false;
@@ -8,7 +8,7 @@ $(function() {
 
 function resizePages() {
     var windowHeight = $(window).height();
-    $(".page").css("min-height", windowHeight-5);
+    $(".page").css("min-height", windowHeight-35);
     $(".page > div").each(function() {
         var contentHeight = $(this).height();
         if((contentHeight+120) < windowHeight) {
