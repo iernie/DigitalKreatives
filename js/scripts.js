@@ -17,26 +17,37 @@ function resizePages() {
     });
 }
 
+function sendEmail() {
+    var emailName = $("#name").val();
+    var emailEmail = $("#email").val();
+    var emailSubject = $("#subject").val();
+    var emailMessage = $("#message").val();
+    if (emailName === "" || emailEmail === "" || emailSubject === "" || emailMessage === "") {
+        $(".alert-message").html("Please fill all input-fields.");
+    }
+    $.ajax({
+        type: "POST",
+        url: "email.php",
+        data: "name=" + emailName + "&email=" + emailEmail + "&subject=" + emailSubject + "&message=" + emailMessage,
+        success: function(msg){
+            if (msg === "success") {
+                $(".alert-message").html("Mail sent!");
+                $("#name").reset();
+                $("#email").reset();
+                $("#subject").reset();
+                $("#message").reset();
+            } else {
+                $(".alert-message").html("An error occured while sending the email.");
+            }
+        }
+    });
+}
+
 $(document).ready(function(){
     resizePages();
     $(".fancybox").fancybox();
     $("#submit").click(function() {
-        var emailName = $("#name").val();
-        var emailEmail = $("#email").val();
-        var emailMessage = $("#message").val();
-        $.ajax({
-            type: "POST",
-            url: "email.php",
-            data: "name=" + emailName + "&email=" + emailEmail + "&message=" + emailMessage,
-            success: function(msg){
-                alert(msg);
-                if (msg === "success") {
-                    $("#message").html("<div class='alert alert-success'>Mail sent!</div>");
-                } else {
-                    $("#message").html("<div class='alert alert-error'>An error occured while sending the mail.</div>");
-                }
-            }
-        });
+        sendEmail();
     });
     $(window).resize(function() {
         resizePages();
