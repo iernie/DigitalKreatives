@@ -31,7 +31,6 @@
          url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -129,7 +128,7 @@ body {
 
 			a {
 				img {
-					border-bottom: 1px solid fade(@black, 10%);
+					border-bottom: 1px solid fade(@black, 15%);
 				}
 			}
 
@@ -141,21 +140,30 @@ body {
 
 			.image-overlay {
 				position: absolute;
-				bottom: 0;
-				background: fade(@black, 70%);
-				padding: 10px 0;
+				top: 0;
+				background: fade(@black, 80%);
+				height: 100%;
 				width: 100%;
 				text-align: center;
+				vertical-align: middle;
 				opacity: 0;
 				text-transform: uppercase;
-				font-family: "BebasNeueRegular";
 				letter-spacing: 3px;
 				text-shadow: 0 1px 0 @black;
 				font-weight: normal;
-				transition: opacity .25s ease-in-out;
-                -o-transition: opacity .25s ease-in-out;
-                -moz-transition: opacity .25s ease-in-out;
-                -webkit-transition: opacity .25s ease-in-out;
+				transition: opacity .15s ease-in-out;
+                -o-transition: opacity .15s ease-in-out;
+                -moz-transition: opacity .15s ease-in-out;
+                -webkit-transition: opacity .15s ease-in-out;
+
+                p {
+                	position: absolute;
+                	top: 50%;
+                	width: 100%;
+                	font-family: "BebasNeueRegular";
+                	color: @white;
+                	opacity: 0.8;
+                }
 			}
 		}
 
@@ -170,6 +178,7 @@ body {
 				font-family: "BebasNeueRegular";
 				font-weight: normal;
 				font-size: 2.3em;
+				border-bottom: 1px solid fade(@black, 30%);
 
 				small {
 					.pull-right;
@@ -177,23 +186,12 @@ body {
 				}
 			}
 
-			p {
-				min-height: 100px;
-				padding-bottom: 10px;
-				border-bottom: 1px solid fade(@black, 30%);
-			}
-
 			small {
 				text-transform: uppercase;
-
 
 				a {
 					.pull-right;
 					color: #D95B43;
-
-					&:hover {
-						color: darken(#D95B43, 20%);
-					}
 				}
 			}
 		}
@@ -214,3 +212,8 @@ body {
 }
 
 //@import "../components/bootstrap/less/responsive.less";
+@import "../components/fancybox/source/jquery.fancybox.css?v=2.1.3";
+
+.fancybox-skin {
+	border-radius: 0;
+}

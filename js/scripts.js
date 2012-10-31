@@ -20,6 +20,24 @@ function resizePages() {
 $(document).ready(function(){
     resizePages();
     $(".fancybox").fancybox();
+    $("#submit").click(function() {
+        var emailName = $("#name").val();
+        var emailEmail = $("#email").val();
+        var emailMessage = $("#message").val();
+        $.ajax({
+            type: "POST",
+            url: "email.php",
+            data: "name=" + emailName + "&email=" + emailEmail + "&message=" + emailMessage,
+            success: function(msg){
+                alert(msg);
+                if (msg === "success") {
+                    $("#message").html("<div class='alert alert-success'>Mail sent!</div>");
+                } else {
+                    $("#message").html("<div class='alert alert-error'>An error occured while sending the mail.</div>");
+                }
+            }
+        });
+    });
     $(window).resize(function() {
         resizePages();
         $('[data-spy="scroll"]').each(function () {
