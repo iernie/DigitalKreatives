@@ -24,6 +24,7 @@ function sendEmail() {
     var emailMessage = $("#message").val();
     if (emailName === "" || emailEmail === "" || emailSubject === "" || emailMessage === "") {
         $(".alert-message").html("Please fill all input-fields.");
+        return;
     }
     $.ajax({
         type: "POST",
