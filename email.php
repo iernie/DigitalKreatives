@@ -1,8 +1,8 @@
 <?php
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = $_POST['subject'];
-	$message = $_POST['message'];
+	$name = mysql_real_escape_string($_POST['name']);
+	$email = mysql_real_escape_string($_POST['email']);
+	$subject = mysql_real_escape_string($_POST['subject']);
+	$message = mysql_real_escape_string($_POST['message']);
 	$headers =
 		'From: ' . $name . "<" . $email . ">\r\n" .
 	    'Reply-To: ' . $email . "\r\n" .
