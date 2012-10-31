@@ -33,10 +33,6 @@ function sendEmail() {
         success: function(msg){
             if (msg === "success") {
                 $(".alert-message").html("Mail sent!");
-                $("#name").reset();
-                $("#email").reset();
-                $("#subject").reset();
-                $("#message").reset();
             } else {
                 $(".alert-message").html("An error occured while sending the email.");
             }
