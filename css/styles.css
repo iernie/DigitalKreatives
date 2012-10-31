@@ -832,6 +832,7 @@ body .page.about{background:#c12843 url("../img/stripes.png") repeat;}
 body .page.work{background:#f08d00 url("../img/stripes.png") repeat;}
 body .page.skills{background:#8ca0a8 url("../img/stripes.png") repeat;}
 body .page.contact{background:#53777a url("../img/stripes.png") repeat;padding-bottom:0;}
+body .page.error{background:#474746 url("../img/stripes.png") repeat;}body .page.error a{color:#C12843;}
 body .page>div{padding:60px 0;}
 body h1{color:#ffffff;text-shadow:2px 3px 0 #000000;font-size:5em;margin-bottom:40px;}
 body h1,body h2{font-family:"ChunkFiveRoman";font-weight:normal;}
