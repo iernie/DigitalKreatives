@@ -24,6 +24,7 @@ function isValidEmailAddress(emailAddress) {
 
 function sendEmail() {
     var form = [], formError = false;
+    $(".alert-message").html("");
     $("form").find("input,textarea").each(function(index) {
         form[index] = $(this).val();
         if (form[index] === "" || ($(this).attr("type") === "email" && !isValidEmailAddress(form[index]))) {

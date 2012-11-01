@@ -925,7 +925,8 @@ body .work-item .caption{padding:0 10px 10px 10px;color:rgba(0, 0, 0, 0.8);text-
 body .work-item .caption small{text-transform:uppercase;}body .work-item .caption small a{float:right;color:#D95B43;}
 body .progress{border-radius:0;background:rgba(0, 0, 0, 0.3);}body .progress .bar{background:#CBCFBE;text-align:left;padding-left:5px;color:#000000;text-shadow:none;}
 body .alert-message{font-family:"BebasNeueRegular";margin-top:10px;font-size:1.5em;color:#C8CE13;}
-body input,body textarea{font-family:"BebasNeueRegular";text-transform:capitalize;}
+body form input,body form textarea{text-transform:capitalize;}
+body form label,body form button{font-family:"BebasNeueRegular";font-size:1.2em;letter-spacing:2px;}
 body .footer{background:#474746 url("../img/stripes.png") repeat;border-bottom:5px solid rgba(0, 0, 0, 0.2);}body .footer h2{font-family:"BebasNeueRegular";}
 body .footer .arrow-up{font-size:1em;float:right;padding-top:3px;}
 .fancybox-skin{border-radius:0;}
