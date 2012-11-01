@@ -5,9 +5,9 @@
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 	$headers =
-		'From: ' . $name . "<>\r\n" .
+		'From: ' . $name . "<". $to .">\r\n" .
 	    'Reply-To: ' . $email . "\r\n" .
 	    'X-Mailer: PHP/' . phpversion();
 
-	return mail($to, $subject, $message, $headers);
+	return (mail($to, $subject, $message, $headers) ? "true" : "false");
 ?>

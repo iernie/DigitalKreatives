@@ -42,8 +42,8 @@ function sendEmail() {
         type: "POST",
         url: "email.php",
         data: "name=" + form[0] + "&email=" + form[1] + "&subject=" + form[2] + "&message=" + form[3],
-        success: function(msg){
-            if (msg === "success") {
+        success: function(emailIsSent){
+            if (emailIsSent) {
                 $(".alert-message").html("Mail sent!");
             } else {
                 $(".alert-message").html("An error occured while sending the email.");
