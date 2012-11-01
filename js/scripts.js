@@ -43,6 +43,7 @@ function sendEmail() {
         url: "email.php",
         data: "name=" + form[0] + "&email=" + form[1] + "&subject=" + form[2] + "&message=" + form[3],
         success: function(emailIsSent){
+            alert(emailIsSent);
             if (emailIsSent) {
                 $(".alert-message").html("Mail sent!");
             } else {
