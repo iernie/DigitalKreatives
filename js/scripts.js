@@ -1,5 +1,5 @@
 $(function() {
-    $('.nav li a[href^="#"], .arrow-down a[href^="#"]').click(function(e) {
+    $('.nav li a[href^="#"], .arrow a[href^="#"]').click(function(e) {
         e.preventDefault();
         $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 200);
         return false;
@@ -54,7 +54,7 @@ function sendEmail() {
 $(document).ready(function(){
     resizePages();
     $(".fancybox").fancybox();
-    $('.arrow-down').find("a").tooltip();
+    $('.arrow').find("a").tooltip();
     $("#submit").click(function() {
         sendEmail();
     });

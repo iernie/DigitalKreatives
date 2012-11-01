@@ -110,25 +110,29 @@ body {
 		> div {
 			padding: 60px 0;
 		}
+	}
 
-		.arrow {
-			font-size: 3em;
-			position: absolute;
-			bottom: 50px;
+	.arrow {
+		font-size: 3em;
+		position: absolute;
+		bottom: 50px;
 
-			a {
-				color: @white;
+		a {
+			color: @white;
 
-				&:hover {
-					text-decoration: none;
-				}
+			&:hover {
+				text-decoration: none;
 			}
 		}
+	}
 
-		.arrow-down {
-			left: 50%;
-			margin-left: -0.55em;
-		}
+	.arrow-down {
+		left: 50%;
+		margin-left: -0.55em;
+	}
+
+	.arrow-up {
+		position: static;
 	}
 
 	h1 {
@@ -251,6 +255,21 @@ body {
 	input, textarea {
 		font-family: "BebasNeueRegular";
 		text-transform: capitalize;
+	}
+
+	.footer {
+		background: #474746 url("../img/stripes.png") repeat;
+		border-bottom: 5px solid fade(@black, 20%);
+
+		h2 {
+			font-family: "BebasNeueRegular";
+		}
+
+		.arrow-up {
+			font-size: 1em;
+			float: right;
+			padding-top: 3px;
+		}
 	}
 }
 

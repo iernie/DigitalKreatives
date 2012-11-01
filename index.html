@@ -9,6 +9,20 @@
         
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" type="text/css" href="css/styles.css?v=1">
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22448304-1']);
+            _gaq.push(['_setDomainName', 'digitalkreatives.net']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <div class="navbar navbar-fixed-top navbar-inverse">
@@ -30,7 +44,7 @@
                     <p class="lead">
                         I'm a 22 year old computer science student from Norway. In my spare time I enjoy doing webdesign, programming, geeking, cooking and photography. I am a minimalist, I run on coffee and tea, and this is my portfolio.
                     </p>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="Continue to my work" href="#work"><i class="icon-circle-arrow-down icon-large"></i></a></div>
+                    <div class="arrow arrow-down"><a rel="tooltip" title="See my work" href="#work"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
             </div>
         </div>
@@ -127,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="See what I'm good at" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
+                    <div class="arrow arrow-down"><a rel="tooltip" title="Want more?" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
             </div>
         </div>
@@ -135,7 +149,7 @@
         <div class="row page skills" id="skills">
             <div class="container">
                 <div class="span6">
-                    <h2>Knowledge</h2>
+                    <h2>What I know</h2>
                     <div class="progress">
                         <div class="bar" style="width: 100%">HTML / CSS</div>
                     </div>
@@ -157,7 +171,7 @@
                     <div class="progress">
                         <div class="bar" style="width: 85%">PYTHON</div>
                     </div>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="Want more?" href="#contact"><i class="icon-circle-arrow-down icon-large"></i></a></div>
+                    <div class="arrow arrow-down"><a rel="tooltip" title="Intrigued?" href="#contact"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
             </div>
         </div>
@@ -170,29 +184,25 @@
                         <div class="control-group">
                             <label class="control-label" for="name">Name</label>
                             <div class="controls">
-                                <input type="text" id="name" placeholder="Name">
-                                <span class="help-inline hide">Please enter a name</span>
+                                <input class="input-large" type="text" id="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="email">Email</label>
                             <div class="controls">
-                                <input type="email" id="email" placeholder="Email">
-                                <span class="help-inline hide">Please enter a valid email</span>
+                                <input class="input-large" type="email" id="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="subject">Subject</label>
                             <div class="controls">
-                                <input type="text" id="subject" placeholder="Subject">
-                                <span class="help-inline hide">Please enter a subject</span>
+                                <input class="input-large" type="text" id="subject" placeholder="Subject">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="message">Message</label>
                             <div class="controls">
-                                <textarea id="message" placeholder="Message"></textarea>
-                                <span class="help-inline hide">Please enter a message</span>
+                                <textarea class="input-large" id="message" placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="control-group">
@@ -202,6 +212,14 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer" id="error">
+            <div class="container">
+                <div class="span12">
+                    <h2>That's it!<span class="arrow arrow-up"><a rel="tooltip" title="Beam me up, Scotty!" href="#about"><i class="icon-circle-arrow-up icon-large"></i></a></span></h2>
                 </div>
             </div>
         </div>
