@@ -27,7 +27,7 @@ function sendEmail() {
     $(".alert-message").html("");
     $("form").find("input,textarea").each(function(index) {
         form[index] = $(this).val();
-        if (form[index] === "" || ($(this).attr("type") === "email" && !isValidEmailAddress(form[index]))) {
+        if (form[index] === "" || ($(this).attr("type") === "email" && !isValidEmailAddress(form[index])) || ($(this).attr("type") === "hidden" && form[index] !== "")) {
             $(this).closest(".control-group").addClass("error");
             formError = true;
         } else {
