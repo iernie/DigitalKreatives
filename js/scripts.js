@@ -44,7 +44,7 @@ function sendEmail() {
         data: "name=" + form[0] + "&email=" + form[1] + "&subject=" + form[2] + "&message=" + form[3],
         success: function(emailIsSent){
             alert(emailIsSent);
-            if (emailIsSent) {
+            if (emailIsSent === "success") {
                 $(".alert-message").html("Mail sent!");
             } else {
                 $(".alert-message").html("An error occured while sending the email.");

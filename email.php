@@ -9,5 +9,11 @@
 	    'Reply-To: ' . $email . "\r\n" .
 	    'X-Mailer: PHP/' . phpversion();
 
-	(mail($to, $subject, $message, $headers) ? echo "true" : echo "false");
+	if(mail($to, $subject, $message, $headers)) {
+		echo "success";
+		exit;
+	} else {
+		echo "error";
+		exit;
+	}
 ?>
