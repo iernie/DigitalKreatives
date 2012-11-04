@@ -40,11 +40,11 @@
         <div class="row page about" id="about">
             <div class="container">
                 <div class="span12">
-                    <h1>DigitalKreatives</h1>
+                    <h1 class="header-text">Welcome</h1>
                     <p class="lead">
                         I'm a 22 year old computer science student from Norway. In my spare time I enjoy doing webdesign, programming, geeking, cooking and photography. I am a minimalist, I run on coffee and tea, and this is my portfolio.
                     </p>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="See my work" href="#work"><i class="icon-circle-arrow-down icon-large"></i></a></div>
+                    <div class="arrow arrow-down"><a class="first-arrow" rel="tooltip" title="See my work" href="#work"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                             <div class="work-item">
                                 <div class="image">
                                     <a class="fancybox" href="img/work/kwarkbit.png">
-                                        <img src="img/work/kwarkbit_thumb.png" alt="Kwarkbit">
+                                        <img rel="kwarkbit" src="img/work/kwarkbit_thumb.png" alt="Kwarkbit">
                                         <div class="image-overlay"><p>Click for larger view</p></div>
                                     </a>
                                 </div>
@@ -71,10 +71,18 @@
                         <div class="span4">
                             <div class="work-item">
                                 <div class="image">
-                                    <a class="fancybox" href="img/work/touchnap.png">
+                                    <a rel="touchnap" class="fancybox" href="img/work/touchnap.png">
                                         <img src="img/work/touchnap_thumb.png" alt="TouchNap">
                                         <div class="image-overlay"><p>Click for larger view</p></div>
                                     </a>
+                                    <div class="hide">
+                                        <a rel="touchnap" class="fancybox" href="img/work/touchnap_2.png">
+                                            <img src="img/work/touchnap_thumb.png" alt="TouchNap">
+                                        </a>
+                                        <a rel="touchnap" class="fancybox" href="img/work/touchnap_3.png">
+                                            <img src="img/work/touchnap_thumb.png" alt="TouchNap">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="caption">
                                     <h3>TouchNap <small>2012</small></h3>
@@ -85,10 +93,21 @@
                         <div class="span4">
                             <div class="work-item">
                                 <div class="image">
-                                    <a class="fancybox" href="img/work/sit_middag.png">
+                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag.png">
                                         <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
                                         <div class="image-overlay"><p>Click for larger view</p></div>
                                     </a>
+                                    <div class="hide">
+                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_2.png">
+                                            <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
+                                        </a>
+                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_3.png">
+                                            <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
+                                        </a>
+                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_4.png">
+                                            <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="caption">
                                     <h3>SiT: Middag <small>2011</small></h3>
@@ -141,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="Want more?" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
+                    <div class="arrow arrow-down"><a class="second-arrow" rel="tooltip" title="Want more?" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
             </div>
         </div>
@@ -178,7 +197,7 @@
 
         <div class="row page contact" id="contact">
             <div class="container">
-                <div class="span12">
+                <div class="span6">
                     <h2>Contact me!</h2>
                     <form>
                         <div class="control-group">
@@ -212,6 +231,10 @@
                             </div>
                         </div>
                     </form>
+                    <div class="socials">
+                        <h3>I'm also on</h3>
+                        <a href="https://github.com/iernie"><i class="icon-github icon-large"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,7 +242,7 @@
         <div class="row footer" id="error">
             <div class="container">
                 <div class="span12">
-                    <h2>That's it!<span class="arrow arrow-up"><a rel="tooltip" title="Beam me up, Scotty!" href="#about"><i class="icon-circle-arrow-up icon-large"></i></a></span></h2>
+                    <h2><span class="footer-text">That's it!</span><span class="arrow arrow-up"><a rel="tooltip" title="Beam me up, Scotty!" href="#about"><i class="icon-circle-arrow-up icon-large"></i></a></span></h2>
                 </div>
             </div>
         </div>

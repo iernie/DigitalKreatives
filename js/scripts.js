@@ -52,8 +52,64 @@ function sendEmail() {
     });
 }
 
+function randomizeHeader() {
+    var headerText = [
+        "Hello",
+        "Hola",
+        "Bonjour",
+        "Ciao",
+        "Shalom",
+        "Konnichiwa",
+        "Hallo",
+        "Marhaban",
+        "Namaste"
+    ];
+    var index = Math.floor(Math.random() * headerText.length);
+    $(".header-text").html(headerText[index]+"!");
+}
+
+function randomizeFirstArrow() {
+    var arrowText = [
+        "See my work",
+        "Continue to my work",
+        "See what I've done"
+    ];
+    var index = Math.floor(Math.random() * arrowText.length);
+    $(".first-arrow").attr("title", arrowText[index]);
+}
+
+function randomizeSecondArrow() {
+    var arrowText = [
+        "Want more?",
+        "See what I know",
+        "View my skills",
+        "Continue further down"
+    ];
+    var index = Math.floor(Math.random() * arrowText.length);
+    $(".second-arrow").attr("title", arrowText[index]);
+}
+
+function randomizeFooter() {
+    var footerText = [
+        "That's it!",
+        "That's all folks!",
+        "Nothing more to see&hellip;",
+        "Can't get enough?"
+    ];
+    var index = Math.floor(Math.random() * footerText.length);
+    $(".footer-text").html(footerText[index]);
+}
+
+function randomizePages() {
+    //randomizeHeader();
+    randomizeFirstArrow();
+    randomizeSecondArrow();
+    randomizeFooter();
+}
+
 $(document).ready(function(){
     resizePages();
+    randomizePages();
     $(".fancybox").fancybox();
     $('.arrow').find("a").tooltip();
     $("#submit").click(function() {

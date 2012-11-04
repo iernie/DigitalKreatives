@@ -927,6 +927,8 @@ body .progress{border-radius:0;background:rgba(0, 0, 0, 0.3);}body .progress .ba
 body .alert-message{font-family:"BebasNeueRegular";margin-top:10px;font-size:1.5em;color:#C8CE13;}
 body form input,body form textarea{text-transform:capitalize;}
 body form label,body form button{font-family:"BebasNeueRegular";font-size:1.2em;letter-spacing:2px;}
+body .socials{margin-top:50px;}body .socials i{font-size:2em;}
+body .socials a{color:#ffffff;margin-right:10px;}body .socials a:hover{text-decoration:none;color:#000000;text-shadow:none;}
 body .footer{background:#474746 url("../img/stripes.png") repeat;border-bottom:5px solid rgba(0, 0, 0, 0.2);}body .footer h2{font-family:"BebasNeueRegular";}
 body .footer .arrow-up{font-size:1em;float:right;padding-top:3px;}
 .fancybox-skin{border-radius:0;}
