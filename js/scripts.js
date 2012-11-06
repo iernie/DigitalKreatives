@@ -52,22 +52,6 @@ function sendEmail() {
     });
 }
 
-function randomizeHeader() {
-    var headerText = [
-        "Hello",
-        "Hola",
-        "Bonjour",
-        "Ciao",
-        "Shalom",
-        "Konnichiwa",
-        "Hallo",
-        "Marhaban",
-        "Namaste"
-    ];
-    var index = Math.floor(Math.random() * headerText.length);
-    $(".header-text").html(headerText[index]+"!");
-}
-
 function randomizeFirstArrow() {
     var arrowText = [
         "See my work",
@@ -101,24 +85,25 @@ function randomizeFooter() {
 }
 
 function randomizePages() {
-    //randomizeHeader();
     randomizeFirstArrow();
     randomizeSecondArrow();
     randomizeFooter();
 }
 
-$(document).ready(function(){
+$(window).load(function() {
     resizePages();
+});
+
+$(window).resize(function() {
+    resizePages();
+});
+
+$(document).ready(function(){
     randomizePages();
     $(".fancybox").fancybox();
     $('.arrow').find("a").tooltip();
+    $('.social').tooltip({'placement': 'bottom'});
     $("#submit").click(function() {
         sendEmail();
-    });
-    $(window).resize(function() {
-        resizePages();
-        $('[data-spy="scroll"]').each(function () {
-            $(this).scrollspy('refresh');
-        });
     });
 });

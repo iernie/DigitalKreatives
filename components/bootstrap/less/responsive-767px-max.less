@@ -7,8 +7,8 @@
 
   // Padding to set content in a bit
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-left: 20px;
+    //padding-right: 20px;
   }
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
@@ -54,7 +54,7 @@
   }
   .thumbnails > li {
     float: none;
-    margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
+    //margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
   }
   // Make all grid-sized elements block level again
   [class*="span"],
@@ -63,12 +63,16 @@
     display: block;
     width: 100%;
     margin-left: 0;
+    padding: 0 30px 0 10px;
     .box-sizing(border-box);
   }
   .span12,
   .row-fluid .span12 {
     width: 100%;
     .box-sizing(border-box);
+  }
+  .thumbnails .span4 {
+    padding: 0;
   }
 
   // FORM FIELDS

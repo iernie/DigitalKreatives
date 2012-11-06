@@ -25,7 +25,7 @@
         </script>
     </head>
     <body data-spy="scroll" data-target=".navbar">
-        <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar navbar-fixed-top navbar-inverse visible-desktop">
             <div class="navbar-inner">
                 <div class="container">
                     <ul class="nav">
@@ -40,7 +40,7 @@
         <div class="row page about" id="about">
             <div class="container">
                 <div class="span12">
-                    <h1 class="header-text">Welcome</h1>
+                    <h1>Hello!</h1>
                     <p class="lead">
                         I'm a 22 year old computer science student from Norway. In my spare time I enjoy doing webdesign, programming, geeking, cooking and photography. I am a minimalist, I run on coffee and tea, and this is my portfolio.
                     </p>
@@ -54,8 +54,8 @@
                 <div class="span12">
                     <h2>Recent work</h2>
                     <div class="row">
-                        <div class="span4">
-                            <div class="work-item">
+                        <ul class="thumbnails">
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a class="fancybox" href="img/work/kwarkbit.png">
                                         <img rel="kwarkbit" src="img/work/kwarkbit_thumb.png" alt="Kwarkbit">
@@ -66,10 +66,8 @@
                                     <h3>Kwarkbit <small>2012</small></h3>
                                     <small>Design &amp; Front-End <a href="http://kwarkbit.com/">Visit site</a></small>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="work-item">
+                            </li>
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a rel="touchnap" class="fancybox" href="img/work/touchnap.png">
                                         <img src="img/work/touchnap_thumb.png" alt="TouchNap">
@@ -88,10 +86,8 @@
                                     <h3>TouchNap <small>2012</small></h3>
                                     <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.touchnap">Play Store</a></small>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="work-item">
+                            </li>
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a rel="sit_middag" class="fancybox" href="img/work/sit_middag.png">
                                         <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
@@ -113,12 +109,8 @@
                                     <h3>SiT: Middag <small>2011</small></h3>
                                     <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.sit">Play Store</a></small>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span4">
-                            <div class="work-item">
+                            </li>
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a class="fancybox" href="img/work/dk.png">
                                         <img src="img/work/dk_thumb.png" alt="abakus">
@@ -129,10 +121,8 @@
                                     <h3>DigitalKreatives <small>2011</small></h3>
                                     <small>Design &amp; Front-End <a href="http://digitalkreatives.net/">Visit site</a></small>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="work-item">
+                            </li>
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a class="fancybox" href="img/work/abakus_nerd.png">
                                         <img src="img/work/abakus_nerd_thumb.png" alt="abakus">
@@ -143,10 +133,8 @@
                                     <h3>Abakus <small>2010</small></h3>
                                     <small>Design &amp; Front-End <a href="http://abakus.no/">Visit site</a></small>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="span4">
-                            <div class="work-item">
+                            </li>
+                            <li class="work-item span4">
                                 <div class="image">
                                     <a class="fancybox" href="img/work/mg.png">
                                         <img src="img/work/mg_thumb.png" alt="Markedsf&oslash;ringsgjengen">
@@ -157,8 +145,8 @@
                                     <h3>MG <small>2010</small></h3>
                                     <small>Design &amp; Front-End <a href="http://mg.samfundet.no/">Visit site</a></small>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="arrow arrow-down"><a class="second-arrow" rel="tooltip" title="Want more?" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
                 </div>
@@ -233,7 +221,7 @@
                     </form>
                     <div class="socials">
                         <h3>I'm also on</h3>
-                        <a href="https://github.com/iernie"><i class="icon-github icon-large"></i></a>
+                        <a class="social" rel="tooltip" title="GitHub" href="https://github.com/iernie"><i class="icon-github icon-large"></i></a>
                     </div>
                 </div>
             </div>
