@@ -1,5 +1,5 @@
-$(function() {
-    $('.nav li a[href^="#"], .arrow a[href^="#"]').click(function(e) {
+$(function () {
+    $('.nav li a[href^="#"], .arrow a[href^="#"]').click(function (e) {
         e.preventDefault();
         $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 200);
         return false;
@@ -8,11 +8,11 @@ $(function() {
 
 function resizePages() {
     var windowHeight = $(window).height();
-    $(".page").css("min-height", windowHeight-35);
-    $(".page").find(".container").each(function() {
+    $(".page").css("min-height", windowHeight - 35);
+    $(".page").find(".container").each(function () {
         var contentHeight = $(this).height();
-        if((contentHeight+120) < windowHeight) {
-            $(this).css('margin-top', (windowHeight/2-contentHeight/2)-100);
+        if ((contentHeight + 120) < windowHeight) {
+            $(this).css('margin-top', (windowHeight / 2 - contentHeight / 2) - 100);
         }
     });
 }
@@ -25,7 +25,7 @@ function isValidEmailAddress(emailAddress) {
 function sendEmail() {
     var form = [], formError = false;
     $(".alert-message").html("");
-    $("form").find("input,textarea").each(function(index) {
+    $("form").find("input,textarea").each(function (index) {
         form[index] = $(this).val();
         if (form[index] === "" || ($(this).attr("type") === "email" && !isValidEmailAddress(form[index]))) {
             $(this).closest(".control-group").addClass("error");
@@ -42,7 +42,7 @@ function sendEmail() {
         type: "POST",
         url: "email.php",
         data: "name=" + form[0] + "&email=" + form[1] + "&subject=" + form[2] + "&message=" + form[3],
-        success: function(msg){
+        success: function (msg) {
             if (msg === "success") {
                 $(".alert-message").html("Mail sent!");
             } else {
@@ -90,20 +90,23 @@ function randomizePages() {
     randomizeFooter();
 }
 
-$(window).load(function() {
+$(window).load(function () {
     resizePages();
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     resizePages();
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     randomizePages();
-    $(".fancybox").fancybox();
+    $(".fancybox")
+        .fancybox({
+            padding: 0
+        });
     $('.arrow').find("a").tooltip();
     $('.social').tooltip({'placement': 'bottom'});
-    $("#submit").click(function() {
+    $("#submit").click(function () {
         sendEmail();
     });
 });

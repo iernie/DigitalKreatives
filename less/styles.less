@@ -309,6 +309,23 @@ body {
 @import "../components/bootstrap/less/responsive.less";
 @import "../components/fancybox/source/jquery.fancybox.css?v=2.1.3";
 
-.fancybox-skin {
-	border-radius: 0;
+.fancybox-nav {
+    width: 60px;       
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
 }
