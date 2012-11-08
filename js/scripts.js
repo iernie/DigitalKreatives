@@ -15,6 +15,9 @@ function resizePages() {
             $(this).css('margin-top', (windowHeight / 2 - contentHeight / 2) - 100);
         }
     });
+    $('[data-spy="scroll"]').each(function () {
+        $(this).scrollspy('refresh');
+    });
 }
 
 function isValidEmailAddress(emailAddress) {
