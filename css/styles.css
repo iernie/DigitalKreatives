@@ -1070,15 +1070,15 @@ body .navbar .navbar-inner li.active{background:transparent;}body .navbar .navba
 body .page{border-bottom:5px solid rgba(0, 0, 0, 0.2);position:relative;padding-bottom:30px;}body .page [class^="span"]{margin-left:10px;}
 body .page.about{background:#c12843 url("../img/stripes.png") repeat;}
 body .page.work{background:#f08d00 url("../img/stripes.png") repeat;}
-body .page.skills{background:#8ca0a8 url("../img/stripes.png") repeat;}
-body .page.contact{background:#53777a url("../img/stripes.png") repeat;}
+body .page.skills{background:#8eac00 url("../img/stripes.png") repeat;}
+body .page.contact{background:#127a97 url("../img/stripes.png") repeat;}
 body .page.error{background:#474746 url("../img/stripes.png") repeat;}body .page.error a{color:#C12843;}
 body .page .container{padding:60px 0;}
 body .lead{text-align:justify;}
 body .arrow{font-size:3em;position:absolute;bottom:50px;}body .arrow a{color:#ffffff;}body .arrow a:hover{text-decoration:none;}
 body .arrow-down{left:50%;margin-left:-0.55em;}
 body .arrow-up{position:static;}
-body h1{color:#ffffff;text-shadow:2px 3px 0 #000000;font-size:5em;margin-bottom:40px;}
+body h1{color:#ffffff;text-shadow:2px 3px 0 #000000;font-size:6em;margin-bottom:40px;}
 body h1,body h2{font-family:"ChunkFiveRoman";font-weight:normal;}
 body h2{text-shadow:1px 2px 0 rgba(0, 0, 0, 0.5);}
 body .thumbnails{margin-left:0;}body .thumbnails .work-item{background:#ffffff;-webkit-box-shadow:1px 1px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:1px 1px 0 rgba(0, 0, 0, 0.3);box-shadow:1px 1px 0 rgba(0, 0, 0, 0.3);text-shadow:none;max-width:290px;}body .thumbnails .work-item .image{position:relative;}body .thumbnails .work-item .image a img{border-bottom:1px solid rgba(0, 0, 0, 0.15);}
@@ -1086,7 +1086,7 @@ body .thumbnails .work-item .image:hover .image-overlay{opacity:1;}
 body .thumbnails .work-item .image .image-overlay{position:absolute;top:0;background:rgba(0, 0, 0, 0.8);height:100%;width:100%;text-align:center;vertical-align:middle;opacity:0;text-transform:uppercase;letter-spacing:3px;text-shadow:0 1px 0 #000000;font-weight:normal;transition:opacity 0.15s ease-in-out;-o-transition:opacity 0.15s ease-in-out;-moz-transition:opacity 0.15s ease-in-out;-webkit-transition:opacity 0.15s ease-in-out;}body .thumbnails .work-item .image .image-overlay p{position:absolute;top:50%;width:100%;font-family:"BebasNeueRegular";color:#ffffff;opacity:0.8;}
 body .thumbnails .work-item .caption{padding:0 10px 10px 10px;color:rgba(0, 0, 0, 0.8);text-align:justify;}body .thumbnails .work-item .caption h3{color:#000000;text-transform:uppercase;font-family:"BebasNeueRegular";font-weight:normal;font-size:2.3em;border-bottom:1px solid rgba(0, 0, 0, 0.3);}body .thumbnails .work-item .caption h3 small{float:right;margin-top:18px;}
 body .thumbnails .work-item .caption small{text-transform:uppercase;}body .thumbnails .work-item .caption small a{float:right;color:#D95B43;}
-body .progress{border-radius:0;background:rgba(0, 0, 0, 0.3);}body .progress .bar{background:#E0E4CC;text-align:left;padding-left:5px;color:#000000;text-shadow:none;}
+body .progress{border-radius:0;background:rgba(0, 0, 0, 0.1);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}body .progress .bar{background:#BC0325;text-align:left;padding-left:5px;color:#ffffff;text-shadow:none;}
 body .alert-message{font-family:"BebasNeueRegular";margin-top:10px;font-size:1.5em;color:#C8CE13;}
 body form input,body form textarea{text-transform:capitalize;}
 body form label,body form button{font-family:"BebasNeueRegular";font-size:1.2em;letter-spacing:2px;}
