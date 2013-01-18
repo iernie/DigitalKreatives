@@ -8,13 +8,7 @@ $(function () {
 
 function resizePages() {
     var windowHeight = $(window).height();
-    $(".page").css("min-height", windowHeight - 35);
-    $(".page").find(".container").each(function () {
-        var contentHeight = $(this).height();
-        if ((contentHeight + 120) < windowHeight) {
-            $(this).css('margin-top', (windowHeight / 2 - contentHeight / 2) - 100);
-        }
-    });
+    $("section").css("min-height", windowHeight - 71);
     $('[data-spy="scroll"]').each(function () {
         $(this).scrollspy('refresh');
     });
@@ -55,44 +49,6 @@ function sendEmail() {
     });
 }
 
-function randomizeFirstArrow() {
-    var arrowText = [
-        "See my work",
-        "Continue to my work",
-        "See what I've done"
-    ];
-    var index = Math.floor(Math.random() * arrowText.length);
-    $(".first-arrow").attr("title", arrowText[index]);
-}
-
-function randomizeSecondArrow() {
-    var arrowText = [
-        "Want more?",
-        "See what I know",
-        "View my skills",
-        "Continue further down"
-    ];
-    var index = Math.floor(Math.random() * arrowText.length);
-    $(".second-arrow").attr("title", arrowText[index]);
-}
-
-function randomizeFooter() {
-    var footerText = [
-        "That's it!",
-        "That's all folks!",
-        "Nothing more to see&hellip;",
-        "Can't get enough?"
-    ];
-    var index = Math.floor(Math.random() * footerText.length);
-    $(".footer-text").html(footerText[index]);
-}
-
-function randomizePages() {
-    randomizeFirstArrow();
-    randomizeSecondArrow();
-    randomizeFooter();
-}
-
 $(window).load(function () {
     resizePages();
 });
@@ -102,13 +58,10 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
-    randomizePages();
     $(".fancybox")
         .fancybox({
             padding: 0
         });
-    $('.arrow').find("a").tooltip();
-    $('.social').tooltip({'placement': 'bottom'});
     $("#submit").click(function () {
         sendEmail();
     });

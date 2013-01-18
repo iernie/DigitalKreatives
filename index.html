@@ -24,264 +24,206 @@
             })();
         </script>
     </head>
-    <body data-spy="scroll" data-target=".navbar">
-        <div class="navbar navbar-fixed-top navbar-inverse visible-desktop">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+    <body data-spy="scroll" data-target="header">
+        <header class="span4">
+            <h1>DK</h1>
+            <p>
+                I'm <strong>Einar</strong>, a computer science student from Norway. I do webdesign, programming, geeking, cooking and photography. I am a minimalist, I run on coffee and tea, and this is my portfolio.
+            </p>
+            <ul class="nav">
+                <li><a href="#work">Recent work</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+            <div class="socials">
+                <a class="social" rel="tooltip" title="GitHub" href="https://github.com/iernie"><i class="icon-github"></i></a>
+            </div>
+        </header>
+        <section class="row" id="work">
+            <div class="span8">
+                <h2>Recent work</h2>
+                <div class="row">
+                    <ul class="thumbnails">
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a rel="importkalkulator" class="fancybox" href="img/work/importkalkulator.png">
+                                    <img src="img/work/importkalkulator_thumb.png" alt="Importkalkulator">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                                <div class="hide">
+                                    <a rel="importkalkulator" class="fancybox" href="img/work/importkalkulator_2.png"></a>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h3>Importkalkulator <small>2012</small></h3>
+                                <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.customscalculator">Play Store</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a class="fancybox" href="img/work/aimasters.png">
+                                    <img rel="kwarkbit" src="img/work/aimasters_thumb.png" alt="AI-masters">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3>AI-masters <small>2012</small></h3>
+                                <small>Design &amp; Front-End <a href="http://research.idi.ntnu.no/aimasters">Visit site</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a class="fancybox" href="img/work/kwarkbit.png">
+                                    <img rel="kwarkbit" src="img/work/kwarkbit_thumb.png" alt="Kwarkbit">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3>Kwarkbit <small>2012</small></h3>
+                                <small>Design &amp; Front-End <a href="http://kwarkbit.com/">Visit site</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a rel="touchnap" class="fancybox" href="img/work/touchnap.png">
+                                    <img src="img/work/touchnap_thumb.png" alt="TouchNap">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                                <div class="hide">
+                                    <a rel="touchnap" class="fancybox" href="img/work/touchnap_2.png"></a>
+                                    <a rel="touchnap" class="fancybox" href="img/work/touchnap_3.png"></a>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h3>TouchNap <small>2012</small></h3>
+                                <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.touchnap">Play Store</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a rel="xcom-usa" class="fancybox" href="img/work/xcom_usa.png">
+                                    <img src="img/work/xcom_usa_thumb.png" alt="XCOM11 USA">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                                <div class="hide">
+                                    <a rel="xcom-usa" class="fancybox" href="img/work/xcom_usa_2.png"></a>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h3>XCOM11 USA<small>2012</small></h3>
+                                <small>DESIGN</small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a rel="sit_middag" class="fancybox" href="img/work/sit_middag.png">
+                                    <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                                <div class="hide">
+                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_2.png"></a>
+                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_3.png"></a>
+                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_4.png"></a>
+                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_5.png"></a>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h3>SiT: Middag <small>2011</small></h3>
+                                <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.sit">Play Store</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a class="fancybox" href="img/work/dk.png">
+                                    <img src="img/work/dk_thumb.png" alt="abakus">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3>DigitalKreatives <small>2011</small></h3>
+                                <small>Design &amp; Front-End <a href="http://digitalkreatives.net/">Visit site</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a rel="xcom-japan" class="fancybox" href="img/work/xcom_japan.png">
+                                    <img src="img/work/xcom_japan_thumb.png" alt="XCOM11 Japan">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                                <div class="hide">
+                                    <a rel="xcom-japan" class="fancybox" href="img/work/xcom_japan_2.png"></a>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h3>XCOM11 Japan<small>2011</small></h3>
+                                <small>DESIGN</small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a class="fancybox" href="img/work/abakus_nerd.png">
+                                    <img src="img/work/abakus_nerd_thumb.png" alt="abakus">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3>Abakus <small>2010</small></h3>
+                                <small>Design &amp; Front-End <a href="http://abakus.no/">Visit site</a></small>
+                            </div>
+                        </li>
+                        <li class="work-item span4">
+                            <div class="image">
+                                <a class="fancybox" href="img/work/mg.png">
+                                    <img src="img/work/mg_thumb.png" alt="Markedsf&oslash;ringsgjengen">
+                                    <div class="image-overlay"><p>Click for larger view</p></div>
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3>MG <small>2010</small></h3>
+                                <small>Design &amp; Front-End <a href="http://mg.samfundet.no/">Visit site</a></small>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="row page about" id="about">
-            <div class="container">
-                <div class="span12">
-                    <h1>Hello!</h1>
-                    <p class="lead">
-                        I'm a 23 year old computer science student from Norway. In my spare time I enjoy doing webdesign, programming, geeking, cooking and photography. I am a minimalist, I run on coffee and tea, and this is my portfolio.
-                    </p>
-                    <div class="arrow arrow-down"><a class="first-arrow" rel="tooltip" title="See my work" href="#work"><i class="icon-circle-arrow-down icon-large"></i></a></div>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <div class="row page work" id="work">
-            <div class="container">
-                <div class="span12">
-                    <h2>Recent work</h2>
-                    <div class="row">
-                        <ul class="thumbnails">
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a rel="importkalkulator" class="fancybox" href="img/work/importkalkulator.png">
-                                        <img src="img/work/importkalkulator_thumb.png" alt="Importkalkulator">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                    <div class="hide">
-                                        <a rel="importkalkulator" class="fancybox" href="img/work/importkalkulator_2.png"></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h3>Importkalkulator <small>2012</small></h3>
-                                    <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.customscalculator">Play Store</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a class="fancybox" href="img/work/aimasters.png">
-                                        <img rel="kwarkbit" src="img/work/aimasters_thumb.png" alt="AI-masters">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                </div>
-                                <div class="caption">
-                                    <h3>AI-masters <small>2012</small></h3>
-                                    <small>Design &amp; Front-End <a href="http://research.idi.ntnu.no/aimasters">Visit site</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a class="fancybox" href="img/work/kwarkbit.png">
-                                        <img rel="kwarkbit" src="img/work/kwarkbit_thumb.png" alt="Kwarkbit">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                </div>
-                                <div class="caption">
-                                    <h3>Kwarkbit <small>2012</small></h3>
-                                    <small>Design &amp; Front-End <a href="http://kwarkbit.com/">Visit site</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a rel="touchnap" class="fancybox" href="img/work/touchnap.png">
-                                        <img src="img/work/touchnap_thumb.png" alt="TouchNap">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                    <div class="hide">
-                                        <a rel="touchnap" class="fancybox" href="img/work/touchnap_2.png"></a>
-                                        <a rel="touchnap" class="fancybox" href="img/work/touchnap_3.png"></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h3>TouchNap <small>2012</small></h3>
-                                    <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.touchnap">Play Store</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a rel="xcom-usa" class="fancybox" href="img/work/xcom_usa.png">
-                                        <img src="img/work/xcom_usa_thumb.png" alt="XCOM11 USA">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                    <div class="hide">
-                                        <a rel="xcom-usa" class="fancybox" href="img/work/xcom_usa_2.png"></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h3>XCOM11 USA<small>2012</small></h3>
-                                    <small>DESIGN</small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a rel="sit_middag" class="fancybox" href="img/work/sit_middag.png">
-                                        <img src="img/work/sit_middag_thumb.png" alt="SiT: Middag">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                    <div class="hide">
-                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_2.png"></a>
-                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_3.png"></a>
-                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_4.png"></a>
-                                        <a rel="sit_middag" class="fancybox" href="img/work/sit_middag_5.png"></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h3>SiT: Middag <small>2011</small></h3>
-                                    <small>Android <a href="https://play.google.com/store/apps/details?id=com.kwarkbit.sit">Play Store</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a class="fancybox" href="img/work/dk.png">
-                                        <img src="img/work/dk_thumb.png" alt="abakus">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                </div>
-                                <div class="caption">
-                                    <h3>DigitalKreatives <small>2011</small></h3>
-                                    <small>Design &amp; Front-End <a href="http://digitalkreatives.net/">Visit site</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a rel="xcom-japan" class="fancybox" href="img/work/xcom_japan.png">
-                                        <img src="img/work/xcom_japan_thumb.png" alt="XCOM11 Japan">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                    <div class="hide">
-                                        <a rel="xcom-japan" class="fancybox" href="img/work/xcom_japan_2.png"></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h3>XCOM11 Japan<small>2011</small></h3>
-                                    <small>DESIGN</small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a class="fancybox" href="img/work/abakus_nerd.png">
-                                        <img src="img/work/abakus_nerd_thumb.png" alt="abakus">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                </div>
-                                <div class="caption">
-                                    <h3>Abakus <small>2010</small></h3>
-                                    <small>Design &amp; Front-End <a href="http://abakus.no/">Visit site</a></small>
-                                </div>
-                            </li>
-                            <li class="work-item span4">
-                                <div class="image">
-                                    <a class="fancybox" href="img/work/mg.png">
-                                        <img src="img/work/mg_thumb.png" alt="Markedsf&oslash;ringsgjengen">
-                                        <div class="image-overlay"><p>Click for larger view</p></div>
-                                    </a>
-                                </div>
-                                <div class="caption">
-                                    <h3>MG <small>2010</small></h3>
-                                    <small>Design &amp; Front-End <a href="http://mg.samfundet.no/">Visit site</a></small>
-                                </div>
-                            </li>
-                        </ul>
+        <section class="row" id="contact">
+            <div class="span6">
+                <h2>Contact me</h2>
+                <form>
+                    <div class="control-group">
+                        <label class="control-label" for="name">Name</label>
+                        <div class="controls">
+                            <input class="input-large" type="text" id="name" placeholder="Name">
+                        </div>
                     </div>
-                    <div class="arrow arrow-down"><a class="second-arrow" rel="tooltip" title="Want more?" href="#skills"><i class="icon-circle-arrow-down icon-large"></i></a></div>
-                </div>
+                    <div class="control-group">
+                        <label class="control-label" for="email">Email</label>
+                        <div class="controls">
+                            <input class="input-large" type="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="subject">Subject</label>
+                        <div class="controls">
+                            <input class="input-large" type="text" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="message">Message</label>
+                        <div class="controls">
+                            <textarea class="input-large" id="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button class="btn" type="button" id="submit">Submit</button>
+                            <div class="alert-message"></div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
-
-        <div class="row page skills" id="skills">
-            <div class="container">
-                <div class="span6">
-                    <h2>What I know</h2>
-                    <div class="progress">
-                        <div class="bar" style="width: 99%">HTML / CSS</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 70%">JAVASCRIPT / JQUERY</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 85%">PHOTOSHOP</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 90%">JAVA</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 90%">ANDROID</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 80%">PHP</div>
-                    </div>
-                    <div class="progress">
-                        <div class="bar" style="width: 75%">PYTHON</div>
-                    </div>
-                    <div class="arrow arrow-down"><a rel="tooltip" title="Intrigued?" href="#contact"><i class="icon-circle-arrow-down icon-large"></i></a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row page contact" id="contact">
-            <div class="container">
-                <div class="span6">
-                    <h2>Contact me!</h2>
-                    <form>
-                        <div class="control-group">
-                            <label class="control-label" for="name">Name</label>
-                            <div class="controls">
-                                <input class="input-large" type="text" id="name" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="email">Email</label>
-                            <div class="controls">
-                                <input class="input-large" type="email" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="subject">Subject</label>
-                            <div class="controls">
-                                <input class="input-large" type="text" id="subject" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="message">Message</label>
-                            <div class="controls">
-                                <textarea class="input-large" id="message" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <button class="btn" type="button" id="submit">Submit</button>
-                                <div class="alert-message"></div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="socials">
-                        <h3>I'm also on</h3>
-                        <a class="social" rel="tooltip" title="GitHub" href="https://github.com/iernie"><i class="icon-github icon-large"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row footer" id="error">
-            <div class="container">
-                <div class="span12">
-                    <h2><span class="footer-text">That's it!</span><span class="arrow arrow-up"><a rel="tooltip" data-placement="left" title="Beam me up, Scotty!" href="#about"><i class="icon-circle-arrow-up icon-large"></i></a></span></h2>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="components/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>

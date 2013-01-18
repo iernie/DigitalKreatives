@@ -1,17 +1,6 @@
 @import "../components/bootstrap/less/bootstrap.less";
 
 @font-face {
-    font-family: 'ChunkFiveRoman';
-    src: url('../fonts/chunkfive-webfont.eot');
-    src: url('../fonts/chunkfive-webfont.eot?iefix') format('eot'),
-         url('../fonts/chunkfive-webfont.woff') format('woff'),
-         url('../fonts/chunkfive-webfont.ttf') format('truetype'),
-         url('../fonts/chunkfive-webfont.svg#webfont8ob4Enur') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'PTSerifRegular';
     src: url('../fonts/PTF55F-webfont.eot');
     src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
@@ -37,106 +26,94 @@
 ::selection { background: fade(@black, 70%); color:#fff; text-shadow: none; }
 
 body {
-	color: fade(@white, 90%);
-	text-shadow: 1px 1px 0 fade(@black, 50%);
+	color: fade(@black, 90%);
+	text-shadow: 1px 1px 0 fade(@white, 50%);
 	font-family: "PTSerifRegular";
+	background: #f5f5f5 url("../img/stripes.png") repeat;
 
-	.navbar {
-		.navbar-inner {
-			background: transparent;
-			border: none;
-			.box-shadow(none);
+	header {
+		position: fixed;
+		width: 30%;
+		margin: 55px 0 0 0;
+		text-align: justify;
+
+		.nav {
+			list-style-type: none;
+			margin-left: -20px !important;
 
 			li {
-				background: @black;
-				text-transform: uppercase;
-				font-weight: bold;
-				font-size: 0.8em;
+				text-align: right;
 
 				a {
-					font-weight: normal;
+					color: @black;
+					text-shadow: none;
+					padding: 2px 10px 2px 100px;
+
+					&:hover {
+						background: transparent;
+					}
 				}
 
 				&.active {
-					background: transparent;
 
 					a {
-						background: lighten(@black, 10%);
-						.box-shadow(none);
+						color: @white;
+						text-shadow: none;
+					
+						&[href^="#work"] {
+							background: #c12843;
+						}
 
-						&:hover,
-						&:focus {
-							background: lighten(@black, 10%);
+						&[href^="#contact"] {
+							background: #f08d00;
 						}
 					}
+					
+				}
+			}
+		}
+
+		.socials {
+			position: fixed;
+			bottom: 10px;
+
+			i {
+				font-size: 2em;
+			}
+
+			a {
+				color: fade(@black, 50%);
+				margin-right: 10px;
+
+				&:hover {
+					text-decoration: none;
+					color: @black;
+					text-shadow: none;
 				}
 			}
 		}
 	}
 
-	.page {
-		border-bottom: 5px solid fade(@black, 20%);
+	section {
+		border-bottom: 1px solid fade(@black, 20%);
+		.box-shadow(0 1px 0 @white);
 		position: relative;
-		padding-bottom: 30px;
-
-		[class^="span"] {
-			margin-left: 10px;
-		}
-
-		&.about {
-			background: #c12843 url("../img/stripes.png") repeat;
-		}
-
-		&.work {
-			background: #f08d00 url("../img/stripes.png") repeat;
-		}
-
-		&.skills {
-			background: #8EAC00 url("../img/stripes.png") repeat;
-		}
-
-		&.contact {
-			background: #127A97 url("../img/stripes.png") repeat;
-		}
+		left: 35%;
+		padding: 35px 0;
+		width: 65%;
 
 		&.error {
 			background: #474746 url("../img/stripes.png") repeat;
+			width: 100%;
+			position: static;
+			text-align: center;
+			color: fade(@white, 90%);
+			text-shadow: 1px 1px 0 fade(@black, 50%);
 
 			a {
-				color: #C12843;
+				color: #c12843;
 			}
 		}
-
-		.container {
-			padding: 60px 0;
-		}
-	}
-
-	.lead {
-		text-align: justify;
-	}
-
-	.arrow {
-		font-size: 3em;
-		position: absolute;
-		bottom: 50px;
-
-		a {
-			color: @white;
-
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-
-	.arrow-down {
-		left: 50%;
-		margin-left: -0.55em;
-	}
-
-	.arrow-up {
-		position: static;
 	}
 
 	h1 {
@@ -147,12 +124,12 @@ body {
 	}
 
 	h1, h2 {
-		font-family: "ChunkFiveRoman";
+		font-family: "BebasNeueRegular";
 		font-weight: normal;
 	}
 
 	h2 {
-		text-shadow: 1px 2px 0 fade(@black, 50%);
+		text-shadow: 1px 2px 0 @white;
 	}
 
 	.thumbnails {
@@ -160,22 +137,27 @@ body {
 
 		.work-item {
 			background: @white;
-			.box-shadow(1px 1px 0 fade(@black, 30%));
+			.box-shadow(2px 2px 1px fade(@black, 10%));
 			text-shadow: none;
 			max-width: 290px;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
 
 			.image {
 				position: relative;
 
 				a {
 					img {
-						border-bottom: 1px solid fade(@black, 15%);
+						border-top-left-radius: 8px;
+						border-top-right-radius: 8px;
 					}
 				}
 
 				&:hover {
 					.image-overlay {
 						opacity: 1;
+						border-top-left-radius: 8px;
+						border-top-right-radius: 8px;
 					}
 				}
 
@@ -239,20 +221,6 @@ body {
 		}
 	}
 
-	.progress {
-		border-radius: 0;
-		background: fade(@black, 10%);
-		.box-shadow(none);
-
-		.bar {
-			background: #BC0325;
-			text-align: left;
-			padding-left: 5px;
-			color: @white;
-			text-shadow: none;
-		}
-	}
-
 	.alert-message {
 		font-family: "BebasNeueRegular";
 		margin-top: 10px;
@@ -269,40 +237,6 @@ body {
 			font-family: "BebasNeueRegular";
 			font-size: 1.2em;
 			letter-spacing: 2px;
-		}
-	}
-
-	.socials {
-		margin-top: 50px;
-
-		i {
-			font-size: 2em;
-		}
-
-		a {
-			color: @white;
-			margin-right: 10px;
-
-			&:hover {
-				text-decoration: none;
-				color: @black;
-				text-shadow: none;
-			}
-		}
-	}
-
-	.footer {
-		background: #474746 url("../img/stripes.png") repeat;
-		border-bottom: 5px solid fade(@black, 20%);
-
-		h2 {
-			font-family: "BebasNeueRegular";
-		}
-
-		.arrow-up {
-			font-size: 1em;
-			float: right;
-			padding-top: 3px;
 		}
 	}
 }
