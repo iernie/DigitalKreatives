@@ -22,6 +22,36 @@
     font-style: normal;
 }
 
+@font-face {
+	font-family: 'Frontage-3D';
+	src: url('../fonts/257121_0_0.eot');
+	src: url('../fonts/257121_0_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/257121_0_0.woff') format('woff'),
+		url('../fonts/257121_0_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Frontage-Shadow';
+	src: url('../fonts/257121_1_0.eot');
+	src: url('../fonts/257121_1_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/257121_1_0.woff') format('woff'),
+		url('../fonts/257121_1_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Frontage-Regular';
+	src: url('../fonts/257121_2_0.eot');
+	src: url('../fonts/257121_2_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/257121_2_0.woff') format('woff'),
+		url('../fonts/257121_2_0.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
 ::-moz-selection{ background: fade(@black, 70%); color:#fff; text-shadow: none; }
 ::selection { background: fade(@black, 70%); color:#fff; text-shadow: none; }
 
@@ -33,12 +63,48 @@ body {
 
 	header {
 		position: fixed;
-		width: 30%;
-		margin: 55px 0 0 0;
+		width: 300px;
+		margin: 70px 0 0 20px;
 		text-align: justify;
+		z-index: 100;
+
+		.header-title {
+			position: relative;
+			left: -10px;
+
+			.header-font {
+				position: absolute;
+				font-size: 5em;
+				letter-spacing: -10px;
+			}
+
+			.header-3d {
+				font-family: "Frontage-3D";
+				z-index: 9;
+				color: fade(@black, 90%);
+				top: -1px;
+				left: 0;
+				.header-font;
+			}
+
+			.header-shadow {
+				font-family: "Frontage-Shadow";
+				z-index: 8;
+				color: fade(@black, 20%);
+				top: 0;
+				left: 0;
+				.header-font;
+			}
+
+		}
+
+		p {
+			margin-top: 60px;
+		}
 
 		.nav {
 			list-style-type: none;
+			margin-top: 20px;
 			margin-left: -20px !important;
 
 			li {
@@ -47,7 +113,8 @@ body {
 				a {
 					color: @black;
 					text-shadow: none;
-					padding: 2px 10px 2px 100px;
+					padding: 0 10px 4px 100px;
+					font-family: "Frontage-Regular";
 
 					&:hover {
 						background: transparent;
@@ -61,11 +128,11 @@ body {
 						text-shadow: none;
 					
 						&[href^="#work"] {
-							background: #c12843;
+							background: #FE4365;
 						}
 
 						&[href^="#contact"] {
-							background: #f08d00;
+							background: #83AF9B;
 						}
 					}
 					
@@ -94,13 +161,16 @@ body {
 		}
 	}
 
+	.row {
+		margin-left: -20px !important;
+	}
+
 	section {
 		border-bottom: 1px solid fade(@black, 20%);
 		.box-shadow(0 1px 0 @white);
 		position: relative;
-		left: 35%;
+		left: 375px;
 		padding: 35px 0;
-		width: 65%;
 
 		&.error {
 			background: #474746 url("../img/stripes.png") repeat;
@@ -263,4 +333,14 @@ body {
 
 .fancybox-prev {
     left: -60px;
+}
+
+@media (max-width: 480px) {
+	header {
+		display: static;
+	}
+
+	section {
+		left: 0;
+	}
 }
